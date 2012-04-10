@@ -1,0 +1,1012 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200051BE141F6B67006295DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051BD141F6B67006295DC /* UIKit.framework */; };
+		200051C0141F6B67006295DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051BF141F6B67006295DC /* Foundation.framework */; };
+		200051C2141F6B67006295DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051C1141F6B67006295DC /* CoreGraphics.framework */; };
+		200051C4141F6B67006295DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051C3141F6B67006295DC /* QuartzCore.framework */; };
+		200051C6141F6B67006295DC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051C5141F6B67006295DC /* OpenGLES.framework */; };
+		200051CC141F6B67006295DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 200051CA141F6B67006295DC /* InfoPlist.strings */; };
+		200051CE141F6B67006295DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 200051CD141F6B67006295DC /* main.m */; };
+		200051D2141F6B67006295DC /* Engine2DAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 200051D1141F6B67006295DC /* Engine2DAppDelegate.m */; };
+		200051D5141F6B67006295DC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200051D3141F6B67006295DC /* MainWindow.xib */; };
+		200051DC141F6B67006295DC /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200051DB141F6B67006295DC /* EAGLView.m */; };
+		200051DF141F6B67006295DC /* Engine2DViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 200051DE141F6B67006295DC /* Engine2DViewController.mm */; };
+		200051E2141F6B67006295DC /* Engine2DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200051E0141F6B67006295DC /* Engine2DViewController.xib */; };
+		200051EA141F6B67006295DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051E9141F6B67006295DC /* SenTestingKit.framework */; };
+		200051EB141F6B67006295DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051BD141F6B67006295DC /* UIKit.framework */; };
+		200051EC141F6B67006295DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051BF141F6B67006295DC /* Foundation.framework */; };
+		200051ED141F6B67006295DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200051C1141F6B67006295DC /* CoreGraphics.framework */; };
+		200051F5141F6B67006295DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 200051F3141F6B67006295DC /* InfoPlist.strings */; };
+		200051F7141F6B67006295DC /* Engine2DTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 200051F6141F6B67006295DC /* Engine2DTests.h */; };
+		200051F9141F6B67006295DC /* Engine2DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 200051F8141F6B67006295DC /* Engine2DTests.m */; };
+		20005222141F6CE2006295DC /* AnimatedSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20005207141F6CE0006295DC /* AnimatedSprite.cpp */; };
+		20005223141F6CE2006295DC /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2000520A141F6CE1006295DC /* GameEngine.cpp */; };
+		20005224141F6CE2006295DC /* Gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2000520C141F6CE1006295DC /* Gui.cpp */; };
+		20005226141F6CE2006295DC /* Sprite2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20005211141F6CE1006295DC /* Sprite2D.cpp */; };
+		20005227141F6CE2006295DC /* Texture2D.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20005214141F6CE1006295DC /* Texture2D.mm */; };
+		20005228141F6CE2006295DC /* TextureLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20005216141F6CE1006295DC /* TextureLoader.mm */; };
+		2000522D141F6CE2006295DC /* WorldMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20005220141F6CE1006295DC /* WorldMap.cpp */; };
+		2008637D1452BADF0069A4A3 /* itemset1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2008637C1452BADF0069A4A3 /* itemset1.png */; };
+		200863801452BB7B0069A4A3 /* sManaPotion.item in Resources */ = {isa = PBXBuildFile; fileRef = 2008637F1452BB7B0069A4A3 /* sManaPotion.item */; };
+		200863821452BB9C0069A4A3 /* bManaPotion.item in Resources */ = {isa = PBXBuildFile; fileRef = 200863811452BB9C0069A4A3 /* bManaPotion.item */; };
+		200863841452BBA80069A4A3 /* mManaPotion.item in Resources */ = {isa = PBXBuildFile; fileRef = 200863831452BBA80069A4A3 /* mManaPotion.item */; };
+		200863871453194B0069A4A3 /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 200863861453194B0069A4A3 /* Inventory.cpp */; };
+		201D012E1439F1A300237D5F /* treasureChest.png in Resources */ = {isa = PBXBuildFile; fileRef = 201D012D1439F1A300237D5F /* treasureChest.png */; };
+		201D01311439F23400237D5F /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 201D01301439F23400237D5F /* Object.cpp */; };
+		2020F3221438E4680013C2BA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2020F3211438E4680013C2BA /* icon.png */; };
+		2020F324143906900013C2BA /* dialogs.png in Resources */ = {isa = PBXBuildFile; fileRef = 2020F323143906900013C2BA /* dialogs.png */; };
+		20467D441450951A00FE0276 /* female1bat.png in Resources */ = {isa = PBXBuildFile; fileRef = 20467D421450951A00FE0276 /* female1bat.png */; };
+		20467D451450951A00FE0276 /* orc.png in Resources */ = {isa = PBXBuildFile; fileRef = 20467D431450951A00FE0276 /* orc.png */; };
+		20467D5D1452A50000FE0276 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20467D5C1452A50000FE0276 /* Item.cpp */; };
+		20467D621452ABFB00FE0276 /* sPotion.item in Resources */ = {isa = PBXBuildFile; fileRef = 20467D611452ABFB00FE0276 /* sPotion.item */; };
+		20467D641452AFB700FE0276 /* mPotion.item in Resources */ = {isa = PBXBuildFile; fileRef = 20467D631452AFB700FE0276 /* mPotion.item */; };
+		20467D661452AFD900FE0276 /* bPotion.item in Resources */ = {isa = PBXBuildFile; fileRef = 20467D651452AFD900FE0276 /* bPotion.item */; };
+		20467D681452B0EC00FE0276 /* items.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20467D671452B0EC00FE0276 /* items.txt */; };
+		20488C5D142FB14D0028AEB3 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20488C5C142FB14D0028AEB3 /* Camera.cpp */; };
+		206D82F6144B0BCA000E0290 /* battleGUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 206D82F5144B0BCA000E0290 /* battleGUI.png */; };
+		207A4CEB1433EC6000FD2928 /* DisplayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 207A4CEA1433EC6000FD2928 /* DisplayList.cpp */; };
+		208202D7144B64C7001F1852 /* BattleHelpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 208202D6144B64C7001F1852 /* BattleHelpers.cpp */; };
+		208202D9144BA379001F1852 /* ork2.battle in Resources */ = {isa = PBXBuildFile; fileRef = 208202D8144BA379001F1852 /* ork2.battle */; };
+		208202DB144BA42A001F1852 /* ork4.battle in Resources */ = {isa = PBXBuildFile; fileRef = 208202DA144BA42A001F1852 /* ork4.battle */; };
+		208A66231437560200C18B22 /* Dinesh.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 208A66221437560200C18B22 /* Dinesh.dlg */; };
+		208A66251437576700C18B22 /* mainGUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 208A66241437576700C18B22 /* mainGUI.png */; };
+		208A66281437663900C18B22 /* Dialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 208A66271437663800C18B22 /* Dialog.cpp */; };
+		208A662F14379E7C00C18B22 /* Heinz.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 208A662E14379E7C00C18B22 /* Heinz.dlg */; };
+		208A66321437BBA500C18B22 /* Thomas.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 208A66311437BBA500C18B22 /* Thomas.dlg */; };
+		208A66341437BC1B00C18B22 /* Gunther.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 208A66331437BC1A00C18B22 /* Gunther.dlg */; };
+		208A66361437BCC700C18B22 /* Hans.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 208A66351437BCC600C18B22 /* Hans.dlg */; };
+		208A66381437BCFF00C18B22 /* Frodo.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 208A66371437BCFE00C18B22 /* Frodo.dlg */; };
+		208A663A1437BD2800C18B22 /* Fridolin.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 208A66391437BD2800C18B22 /* Fridolin.dlg */; };
+		208CA2B214310AEF0040578E /* NOTES in Resources */ = {isa = PBXBuildFile; fileRef = 208CA2B114310AEF0040578E /* NOTES */; };
+		208CA2B6143111C30040578E /* swamp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 208CA2B5143111C30040578E /* swamp.txt */; };
+		208CA2B81431124D0040578E /* script_swamp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 208CA2B71431124D0040578E /* script_swamp.txt */; };
+		2097EBD11449F23A0066F5FF /* Characters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2097EBD01449F2390066F5FF /* Characters.cpp */; };
+		2097EBE2144A1B0E0066F5FF /* BattleEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2097EBE1144A1B0E0066F5FF /* BattleEngine.cpp */; };
+		2097EBE6144A23570066F5FF /* forest_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2097EBE5144A23570066F5FF /* forest_back.png */; };
+		2097EBEE144A33130066F5FF /* ork.battle in Resources */ = {isa = PBXBuildFile; fileRef = 2097EBED144A33130066F5FF /* ork.battle */; };
+		2097EBF4144A37E30066F5FF /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2097EBF3144A37E30066F5FF /* Monster.cpp */; };
+		209ADF51144CBB6500B74A19 /* melee2.png in Resources */ = {isa = PBXBuildFile; fileRef = 209ADF50144CBB6500B74A19 /* melee2.png */; };
+		20A2CBD81422DA920022545F /* Helpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20A2CBD71422DA920022545F /* Helpers.mm */; };
+		20AF8DD1142FD6FC00FDC34E /* Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20AF8DD0142FD6FC00FDC34E /* Font.cpp */; };
+		20AF8DD6142FD82100FDC34E /* font_silom.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AF8DD5142FD82100FDC34E /* font_silom.png */; };
+		20B44F7B142D1FAE00807C06 /* woods1.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B44F79142D1FAE00807C06 /* woods1.png */; };
+		20B44F7C142D1FAE00807C06 /* woods1obj.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B44F7A142D1FAE00807C06 /* woods1obj.png */; };
+		20BFF4DF1440835000EB62A6 /* event1.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 20BFF4DE1440835000EB62A6 /* event1.dlg */; };
+		20C6BEBF143F469100E5E5EA /* main.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20C6BEBE143F469100E5E5EA /* main.txt */; };
+		20D033071430ECB600478398 /* Script.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20D033061430ECB600478398 /* Script.cpp */; };
+		20D0330A1430ED5500478398 /* forest1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20D033091430ED5500478398 /* forest1.txt */; };
+		20D0330D1430F35800478398 /* script_forest1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20D0330C1430F35800478398 /* script_forest1.txt */; };
+		20D7C49E143F89CE00B6922E /* female1.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D7C49A143F89CE00B6922E /* female1.png */; };
+		20D7C4A0143F8A2C00B6922E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20D7C49F143F8A2C00B6922E /* Player.cpp */; };
+		20D7C4A4143FA21700B6922E /* npc1.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D7C4A3143FA21700B6922E /* npc1.png */; };
+		20E0EE5514B4D5FE0061C92B /* Herman.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 20E0EE5414B4D5FD0061C92B /* Herman.dlg */; };
+		20FBD6CF143A0A0D00BC962E /* forest_chest1.dlg in Resources */ = {isa = PBXBuildFile; fileRef = 20FBD6CE143A0A0D00BC962E /* forest_chest1.dlg */; };
+		20FC6B8A143255FC0068D570 /* NPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FC6B89143255FC0068D570 /* NPC.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		200051EE141F6B67006295DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 200051B0141F6B67006295DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200051B8141F6B67006295DC;
+			remoteInfo = Engine2D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200051B9141F6B67006295DC /* Engine2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Engine2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200051BD141F6B67006295DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		200051BF141F6B67006295DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		200051C1141F6B67006295DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		200051C3141F6B67006295DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		200051C5141F6B67006295DC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		200051C9141F6B67006295DC /* Engine2D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Engine2D-Info.plist"; sourceTree = "<group>"; };
+		200051CB141F6B67006295DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		200051CD141F6B67006295DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		200051CF141F6B67006295DC /* Engine2D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Engine2D-Prefix.pch"; sourceTree = "<group>"; };
+		200051D0141F6B67006295DC /* Engine2DAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine2DAppDelegate.h; sourceTree = "<group>"; };
+		200051D1141F6B67006295DC /* Engine2DAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine2DAppDelegate.m; sourceTree = "<group>"; };
+		200051D4141F6B67006295DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		200051DA141F6B67006295DC /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		200051DB141F6B67006295DC /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		200051DD141F6B67006295DC /* Engine2DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine2DViewController.h; sourceTree = "<group>"; };
+		200051DE141F6B67006295DC /* Engine2DViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Engine2DViewController.mm; sourceTree = "<group>"; };
+		200051E1141F6B67006295DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Engine2DViewController.xib; sourceTree = "<group>"; };
+		200051E8141F6B67006295DC /* Engine2DTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Engine2DTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		200051E9141F6B67006295DC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		200051F2141F6B67006295DC /* Engine2DTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Engine2DTests-Info.plist"; sourceTree = "<group>"; };
+		200051F4141F6B67006295DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		200051F6141F6B67006295DC /* Engine2DTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine2DTests.h; sourceTree = "<group>"; };
+		200051F8141F6B67006295DC /* Engine2DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine2DTests.m; sourceTree = "<group>"; };
+		20005207141F6CE0006295DC /* AnimatedSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedSprite.cpp; sourceTree = "<group>"; };
+		20005208141F6CE0006295DC /* AnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedSprite.h; sourceTree = "<group>"; };
+		20005209141F6CE0006295DC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2000520A141F6CE1006295DC /* GameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = GameEngine.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		2000520B141F6CE1006295DC /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GameEngine.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2000520C141F6CE1006295DC /* Gui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gui.cpp; sourceTree = "<group>"; };
+		2000520D141F6CE1006295DC /* Gui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gui.h; sourceTree = "<group>"; };
+		2000520E141F6CE1006295DC /* Helpers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Helpers.h; sourceTree = "<group>"; };
+		20005211141F6CE1006295DC /* Sprite2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite2D.cpp; sourceTree = "<group>"; };
+		20005212141F6CE1006295DC /* Sprite2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite2D.h; sourceTree = "<group>"; };
+		20005213141F6CE1006295DC /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		20005214141F6CE1006295DC /* Texture2D.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture2D.mm; sourceTree = "<group>"; };
+		20005215141F6CE1006295DC /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
+		20005216141F6CE1006295DC /* TextureLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextureLoader.mm; sourceTree = "<group>"; };
+		20005220141F6CE1006295DC /* WorldMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldMap.cpp; sourceTree = "<group>"; };
+		20005221141F6CE2006295DC /* WorldMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldMap.h; sourceTree = "<group>"; };
+		2008637C1452BADF0069A4A3 /* itemset1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itemset1.png; sourceTree = "<group>"; };
+		2008637F1452BB7B0069A4A3 /* sManaPotion.item */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sManaPotion.item; sourceTree = "<group>"; };
+		200863811452BB9C0069A4A3 /* bManaPotion.item */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bManaPotion.item; sourceTree = "<group>"; };
+		200863831452BBA80069A4A3 /* mManaPotion.item */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mManaPotion.item; sourceTree = "<group>"; };
+		20086385145319430069A4A3 /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
+		200863861453194B0069A4A3 /* Inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Inventory.cpp; sourceTree = "<group>"; };
+		201D012D1439F1A300237D5F /* treasureChest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treasureChest.png; sourceTree = "<group>"; };
+		201D012F1439F1C800237D5F /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		201D01301439F23400237D5F /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		2020F3211438E4680013C2BA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2020F323143906900013C2BA /* dialogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialogs.png; sourceTree = "<group>"; };
+		20467D421450951A00FE0276 /* female1bat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female1bat.png; sourceTree = "<group>"; };
+		20467D431450951A00FE0276 /* orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orc.png; sourceTree = "<group>"; };
+		20467D5A1452A43D00FE0276 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		20467D5C1452A50000FE0276 /* Item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Item.cpp; sourceTree = "<group>"; };
+		20467D5E1452A64300FE0276 /* ItemDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDef.h; sourceTree = "<group>"; };
+		20467D611452ABFB00FE0276 /* sPotion.item */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sPotion.item; sourceTree = "<group>"; };
+		20467D631452AFB700FE0276 /* mPotion.item */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mPotion.item; sourceTree = "<group>"; };
+		20467D651452AFD900FE0276 /* bPotion.item */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bPotion.item; sourceTree = "<group>"; };
+		20467D671452B0EC00FE0276 /* items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = items.txt; sourceTree = "<group>"; };
+		20488C5A142FB1170028AEB3 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Camera.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		20488C5C142FB14D0028AEB3 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = Camera.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		206D82F5144B0BCA000E0290 /* battleGUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battleGUI.png; sourceTree = "<group>"; };
+		207A4CE91433B51100FD2928 /* DisplayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayList.h; sourceTree = "<group>"; };
+		207A4CEA1433EC6000FD2928 /* DisplayList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayList.cpp; sourceTree = "<group>"; };
+		208202D4144B6485001F1852 /* BattleHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleHelpers.h; sourceTree = "<group>"; };
+		208202D6144B64C7001F1852 /* BattleHelpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleHelpers.cpp; sourceTree = "<group>"; };
+		208202D8144BA379001F1852 /* ork2.battle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ork2.battle; sourceTree = "<group>"; };
+		208202DA144BA42A001F1852 /* ork4.battle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ork4.battle; sourceTree = "<group>"; };
+		208A66221437560200C18B22 /* Dinesh.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dinesh.dlg; sourceTree = "<group>"; };
+		208A66241437576700C18B22 /* mainGUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainGUI.png; sourceTree = "<group>"; };
+		208A6626143765E000C18B22 /* Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dialog.h; sourceTree = "<group>"; };
+		208A66271437663800C18B22 /* Dialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dialog.cpp; sourceTree = "<group>"; };
+		208A662E14379E7C00C18B22 /* Heinz.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Heinz.dlg; sourceTree = "<group>"; };
+		208A66311437BBA500C18B22 /* Thomas.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thomas.dlg; sourceTree = "<group>"; };
+		208A66331437BC1A00C18B22 /* Gunther.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gunther.dlg; sourceTree = "<group>"; };
+		208A66351437BCC600C18B22 /* Hans.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hans.dlg; sourceTree = "<group>"; };
+		208A66371437BCFE00C18B22 /* Frodo.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Frodo.dlg; sourceTree = "<group>"; };
+		208A66391437BD2800C18B22 /* Fridolin.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fridolin.dlg; sourceTree = "<group>"; };
+		208CA2B114310AEF0040578E /* NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NOTES; path = Engine2D/NOTES; sourceTree = "<group>"; };
+		208CA2B5143111C30040578E /* swamp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swamp.txt; sourceTree = "<group>"; };
+		208CA2B71431124D0040578E /* script_swamp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script_swamp.txt; sourceTree = "<group>"; };
+		2097EBCE1449F1CD0066F5FF /* Characters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Characters.h; sourceTree = "<group>"; };
+		2097EBD01449F2390066F5FF /* Characters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Characters.cpp; sourceTree = "<group>"; };
+		2097EBE0144A1AA10066F5FF /* BattleEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BattleEngine.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2097EBE1144A1B0E0066F5FF /* BattleEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = BattleEngine.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		2097EBE5144A23570066F5FF /* forest_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest_back.png; sourceTree = "<group>"; };
+		2097EBED144A33130066F5FF /* ork.battle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ork.battle; sourceTree = "<group>"; };
+		2097EBF2144A37A90066F5FF /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		2097EBF3144A37E30066F5FF /* Monster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = Monster.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		209ADF50144CBB6500B74A19 /* melee2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melee2.png; sourceTree = "<group>"; };
+		20A2CBD71422DA920022545F /* Helpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Helpers.mm; sourceTree = "<group>"; };
+		20AA8A2E142FBD2900EE3477 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		20AF8DD0142FD6FC00FDC34E /* Font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Font.cpp; sourceTree = "<group>"; };
+		20AF8DD3142FD70C00FDC34E /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		20AF8DD5142FD82100FDC34E /* font_silom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font_silom.png; sourceTree = "<group>"; };
+		20B44F79142D1FAE00807C06 /* woods1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woods1.png; sourceTree = "<group>"; };
+		20B44F7A142D1FAE00807C06 /* woods1obj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woods1obj.png; sourceTree = "<group>"; };
+		20BFF4DE1440835000EB62A6 /* event1.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event1.dlg; sourceTree = "<group>"; };
+		20C6BEBE143F469100E5E5EA /* main.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.txt; sourceTree = "<group>"; };
+		20D033051430ECAE00478398 /* Script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Script.h; sourceTree = "<group>"; };
+		20D033061430ECB600478398 /* Script.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Script.cpp; sourceTree = "<group>"; };
+		20D033091430ED5500478398 /* forest1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = forest1.txt; sourceTree = "<group>"; };
+		20D0330B1430F07C00478398 /* ScriptDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptDef.h; sourceTree = "<group>"; };
+		20D0330C1430F35800478398 /* script_forest1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script_forest1.txt; sourceTree = "<group>"; };
+		20D7C49A143F89CE00B6922E /* female1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = female1.png; path = Engine2D/textures/charsets/female1.png; sourceTree = SOURCE_ROOT; };
+		20D7C49F143F8A2C00B6922E /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		20D7C4A3143FA21700B6922E /* npc1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = npc1.png; path = Engine2D/textures/charsets/npc1.png; sourceTree = SOURCE_ROOT; };
+		20E0EE5414B4D5FD0061C92B /* Herman.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Herman.dlg; sourceTree = "<group>"; };
+		20FBD6CE143A0A0D00BC962E /* forest_chest1.dlg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = forest_chest1.dlg; sourceTree = "<group>"; };
+		20FC6B88143255F50068D570 /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPC.h; sourceTree = "<group>"; };
+		20FC6B89143255FC0068D570 /* NPC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NPC.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		200051B6141F6B67006295DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200051BE141F6B67006295DC /* UIKit.framework in Frameworks */,
+				200051C0141F6B67006295DC /* Foundation.framework in Frameworks */,
+				200051C2141F6B67006295DC /* CoreGraphics.framework in Frameworks */,
+				200051C4141F6B67006295DC /* QuartzCore.framework in Frameworks */,
+				200051C6141F6B67006295DC /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200051E4141F6B67006295DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200051EA141F6B67006295DC /* SenTestingKit.framework in Frameworks */,
+				200051EB141F6B67006295DC /* UIKit.framework in Frameworks */,
+				200051EC141F6B67006295DC /* Foundation.framework in Frameworks */,
+				200051ED141F6B67006295DC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		200051AE141F6B67006295DC = {
+			isa = PBXGroup;
+			children = (
+				208CA2B114310AEF0040578E /* NOTES */,
+				200051C7141F6B67006295DC /* Engine2D */,
+				2000522F141F6D1A006295DC /* Resources */,
+				200051F0141F6B67006295DC /* Engine2DTests */,
+				200051BC141F6B67006295DC /* Frameworks */,
+				200051BA141F6B67006295DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		200051BA141F6B67006295DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200051B9141F6B67006295DC /* Engine2D.app */,
+				200051E8141F6B67006295DC /* Engine2DTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		200051BC141F6B67006295DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				200051BD141F6B67006295DC /* UIKit.framework */,
+				200051BF141F6B67006295DC /* Foundation.framework */,
+				200051C1141F6B67006295DC /* CoreGraphics.framework */,
+				200051C3141F6B67006295DC /* QuartzCore.framework */,
+				200051C5141F6B67006295DC /* OpenGLES.framework */,
+				200051E9141F6B67006295DC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		200051C7141F6B67006295DC /* Engine2D */ = {
+			isa = PBXGroup;
+			children = (
+				2000520B141F6CE1006295DC /* GameEngine.h */,
+				2000520A141F6CE1006295DC /* GameEngine.cpp */,
+				2097EBDE144A1A900066F5FF /* Battle */,
+				20AA8A32142FCB1000EE3477 /* GameObjects */,
+				20D033031430EC9500478398 /* Script */,
+				2000522E141F6CE6006295DC /* Graphics */,
+				20005206141F6C75006295DC /* UIConnect */,
+				200051C8141F6B67006295DC /* Supporting Files */,
+			);
+			path = Engine2D;
+			sourceTree = "<group>";
+		};
+		200051C8141F6B67006295DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20005209141F6CE0006295DC /* Constants.h */,
+				2000520E141F6CE1006295DC /* Helpers.h */,
+				20A2CBD71422DA920022545F /* Helpers.mm */,
+				20C6BEC1143F537300E5E5EA /* Main */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		200051F0141F6B67006295DC /* Engine2DTests */ = {
+			isa = PBXGroup;
+			children = (
+				200051F6141F6B67006295DC /* Engine2DTests.h */,
+				200051F8141F6B67006295DC /* Engine2DTests.m */,
+				200051F1141F6B67006295DC /* Supporting Files */,
+			);
+			path = Engine2DTests;
+			sourceTree = "<group>";
+		};
+		200051F1141F6B67006295DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				200051F2141F6B67006295DC /* Engine2DTests-Info.plist */,
+				200051F3141F6B67006295DC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20005206141F6C75006295DC /* UIConnect */ = {
+			isa = PBXGroup;
+			children = (
+				200051D0141F6B67006295DC /* Engine2DAppDelegate.h */,
+				200051D1141F6B67006295DC /* Engine2DAppDelegate.m */,
+				200051DA141F6B67006295DC /* EAGLView.h */,
+				200051DB141F6B67006295DC /* EAGLView.m */,
+				200051DD141F6B67006295DC /* Engine2DViewController.h */,
+				200051DE141F6B67006295DC /* Engine2DViewController.mm */,
+			);
+			name = UIConnect;
+			sourceTree = "<group>";
+		};
+		2000520F141F6CE1006295DC /* maps */ = {
+			isa = PBXGroup;
+			children = (
+				208CA2B4143111C30040578E /* swamp */,
+				20D033081430ED5500478398 /* forest1 */,
+			);
+			path = maps;
+			sourceTree = "<group>";
+		};
+		20005217141F6CE1006295DC /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				2008637B1452BADF0069A4A3 /* items */,
+				2097EBE3144A23570066F5FF /* battle */,
+				201D012C1439F1A300237D5F /* objects */,
+				20AF8DD4142FD82100FDC34E /* fonts */,
+				20005218141F6CE1006295DC /* gui */,
+				2000521A141F6CE1006295DC /* charsets */,
+				2000521E141F6CE1006295DC /* tilesets */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		20005218141F6CE1006295DC /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				2020F323143906900013C2BA /* dialogs.png */,
+				208A66241437576700C18B22 /* mainGUI.png */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
+		2000521A141F6CE1006295DC /* charsets */ = {
+			isa = PBXGroup;
+			children = (
+				20D7C4A3143FA21700B6922E /* npc1.png */,
+				20D7C49A143F89CE00B6922E /* female1.png */,
+			);
+			name = charsets;
+			path = mainchar;
+			sourceTree = "<group>";
+		};
+		2000521E141F6CE1006295DC /* tilesets */ = {
+			isa = PBXGroup;
+			children = (
+				20B44F79142D1FAE00807C06 /* woods1.png */,
+				20B44F7A142D1FAE00807C06 /* woods1obj.png */,
+			);
+			path = tilesets;
+			sourceTree = "<group>";
+		};
+		2000522E141F6CE6006295DC /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				20005208141F6CE0006295DC /* AnimatedSprite.h */,
+				20005207141F6CE0006295DC /* AnimatedSprite.cpp */,
+				20005212141F6CE1006295DC /* Sprite2D.h */,
+				20005211141F6CE1006295DC /* Sprite2D.cpp */,
+				20488C5A142FB1170028AEB3 /* Camera.h */,
+				20488C5C142FB14D0028AEB3 /* Camera.cpp */,
+				20005213141F6CE1006295DC /* Texture2D.h */,
+				20005214141F6CE1006295DC /* Texture2D.mm */,
+				20005221141F6CE2006295DC /* WorldMap.h */,
+				20005220141F6CE1006295DC /* WorldMap.cpp */,
+				20AF8DD3142FD70C00FDC34E /* Font.h */,
+				20AF8DD0142FD6FC00FDC34E /* Font.cpp */,
+				207A4CE91433B51100FD2928 /* DisplayList.h */,
+				207A4CEA1433EC6000FD2928 /* DisplayList.cpp */,
+				20005215141F6CE1006295DC /* TextureLoader.h */,
+				20005216141F6CE1006295DC /* TextureLoader.mm */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		2000522F141F6D1A006295DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20C6BEBE143F469100E5E5EA /* main.txt */,
+				2020F3211438E4680013C2BA /* icon.png */,
+				20467D5F1452ABD200FE0276 /* items */,
+				2000520F141F6CE1006295DC /* maps */,
+				20005217141F6CE1006295DC /* textures */,
+			);
+			name = Resources;
+			path = Engine2D;
+			sourceTree = "<group>";
+		};
+		2008637B1452BADF0069A4A3 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				2008637C1452BADF0069A4A3 /* itemset1.png */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
+		201D012C1439F1A300237D5F /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				201D012D1439F1A300237D5F /* treasureChest.png */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		20467D411450951A00FE0276 /* characters */ = {
+			isa = PBXGroup;
+			children = (
+				20467D421450951A00FE0276 /* female1bat.png */,
+				20467D431450951A00FE0276 /* orc.png */,
+			);
+			path = characters;
+			sourceTree = "<group>";
+		};
+		20467D5F1452ABD200FE0276 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				20467D671452B0EC00FE0276 /* items.txt */,
+				20467D601452ABE300FE0276 /* support_items */,
+			);
+			name = items;
+			path = Items;
+			sourceTree = "<group>";
+		};
+		20467D601452ABE300FE0276 /* support_items */ = {
+			isa = PBXGroup;
+			children = (
+				20467D611452ABFB00FE0276 /* sPotion.item */,
+				20467D631452AFB700FE0276 /* mPotion.item */,
+				20467D651452AFD900FE0276 /* bPotion.item */,
+				2008637F1452BB7B0069A4A3 /* sManaPotion.item */,
+				200863831452BBA80069A4A3 /* mManaPotion.item */,
+				200863811452BB9C0069A4A3 /* bManaPotion.item */,
+			);
+			path = support_items;
+			sourceTree = "<group>";
+		};
+		206D82F4144B0BCA000E0290 /* battleGUI */ = {
+			isa = PBXGroup;
+			children = (
+				206D82F5144B0BCA000E0290 /* battleGUI.png */,
+			);
+			path = battleGUI;
+			sourceTree = "<group>";
+		};
+		208202DC144BA9FA001F1852 /* attackSprites */ = {
+			isa = PBXGroup;
+			children = (
+				209ADF50144CBB6500B74A19 /* melee2.png */,
+			);
+			path = attackSprites;
+			sourceTree = "<group>";
+		};
+		208A66211437560200C18B22 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				208A66221437560200C18B22 /* Dinesh.dlg */,
+				208A66351437BCC600C18B22 /* Hans.dlg */,
+				208A66371437BCFE00C18B22 /* Frodo.dlg */,
+				208A66391437BD2800C18B22 /* Fridolin.dlg */,
+				20BFF4DE1440835000EB62A6 /* event1.dlg */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		208A662D14379E7C00C18B22 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				208A662E14379E7C00C18B22 /* Heinz.dlg */,
+				208A66311437BBA500C18B22 /* Thomas.dlg */,
+				208A66331437BC1A00C18B22 /* Gunther.dlg */,
+				20FBD6CE143A0A0D00BC962E /* forest_chest1.dlg */,
+				20E0EE5414B4D5FD0061C92B /* Herman.dlg */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		208CA2B4143111C30040578E /* swamp */ = {
+			isa = PBXGroup;
+			children = (
+				208A66211437560200C18B22 /* Dialogs */,
+				208CA2B5143111C30040578E /* swamp.txt */,
+				208CA2B71431124D0040578E /* script_swamp.txt */,
+			);
+			path = swamp;
+			sourceTree = "<group>";
+		};
+		2097EBDE144A1A900066F5FF /* Battle */ = {
+			isa = PBXGroup;
+			children = (
+				2097EBE0144A1AA10066F5FF /* BattleEngine.h */,
+				2097EBE1144A1B0E0066F5FF /* BattleEngine.cpp */,
+				2097EBF2144A37A90066F5FF /* Monster.h */,
+				2097EBF3144A37E30066F5FF /* Monster.cpp */,
+				2097EBCE1449F1CD0066F5FF /* Characters.h */,
+				2097EBD01449F2390066F5FF /* Characters.cpp */,
+				208202D4144B6485001F1852 /* BattleHelpers.h */,
+				208202D6144B64C7001F1852 /* BattleHelpers.cpp */,
+			);
+			name = Battle;
+			sourceTree = "<group>";
+		};
+		2097EBE3144A23570066F5FF /* battle */ = {
+			isa = PBXGroup;
+			children = (
+				20467D411450951A00FE0276 /* characters */,
+				208202DC144BA9FA001F1852 /* attackSprites */,
+				206D82F4144B0BCA000E0290 /* battleGUI */,
+				2097EBE4144A23570066F5FF /* backgrounds */,
+			);
+			path = battle;
+			sourceTree = "<group>";
+		};
+		2097EBE4144A23570066F5FF /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				2097EBE5144A23570066F5FF /* forest_back.png */,
+			);
+			path = backgrounds;
+			sourceTree = "<group>";
+		};
+		2097EBEB144A32FD0066F5FF /* Battles */ = {
+			isa = PBXGroup;
+			children = (
+				2097EBED144A33130066F5FF /* ork.battle */,
+				208202D8144BA379001F1852 /* ork2.battle */,
+				208202DA144BA42A001F1852 /* ork4.battle */,
+			);
+			name = Battles;
+			sourceTree = "<group>";
+		};
+		20AA8A32142FCB1000EE3477 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				20086385145319430069A4A3 /* Inventory.h */,
+				200863861453194B0069A4A3 /* Inventory.cpp */,
+				20467D5A1452A43D00FE0276 /* Item.h */,
+				20467D5C1452A50000FE0276 /* Item.cpp */,
+				20467D5E1452A64300FE0276 /* ItemDef.h */,
+				2000520D141F6CE1006295DC /* Gui.h */,
+				2000520C141F6CE1006295DC /* Gui.cpp */,
+				20AA8A2E142FBD2900EE3477 /* Player.h */,
+				20D7C49F143F8A2C00B6922E /* Player.cpp */,
+				20FC6B88143255F50068D570 /* NPC.h */,
+				20FC6B89143255FC0068D570 /* NPC.cpp */,
+				201D012F1439F1C800237D5F /* Object.h */,
+				201D01301439F23400237D5F /* Object.cpp */,
+			);
+			name = GameObjects;
+			sourceTree = "<group>";
+		};
+		20AF8DD4142FD82100FDC34E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				20AF8DD5142FD82100FDC34E /* font_silom.png */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		20C6BEC1143F537300E5E5EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				200051D3141F6B67006295DC /* MainWindow.xib */,
+				200051E0141F6B67006295DC /* Engine2DViewController.xib */,
+				200051CD141F6B67006295DC /* main.m */,
+				200051CF141F6B67006295DC /* Engine2D-Prefix.pch */,
+				200051C9141F6B67006295DC /* Engine2D-Info.plist */,
+				200051CA141F6B67006295DC /* InfoPlist.strings */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		20D033031430EC9500478398 /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				20D0330B1430F07C00478398 /* ScriptDef.h */,
+				20D033051430ECAE00478398 /* Script.h */,
+				20D033061430ECB600478398 /* Script.cpp */,
+				208A6626143765E000C18B22 /* Dialog.h */,
+				208A66271437663800C18B22 /* Dialog.cpp */,
+			);
+			name = Script;
+			sourceTree = "<group>";
+		};
+		20D033081430ED5500478398 /* forest1 */ = {
+			isa = PBXGroup;
+			children = (
+				2097EBEB144A32FD0066F5FF /* Battles */,
+				208A662D14379E7C00C18B22 /* Dialogs */,
+				20D033091430ED5500478398 /* forest1.txt */,
+				20D0330C1430F35800478398 /* script_forest1.txt */,
+			);
+			path = forest1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		200051B8141F6B67006295DC /* Engine2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200051FC141F6B67006295DC /* Build configuration list for PBXNativeTarget "Engine2D" */;
+			buildPhases = (
+				200051B5141F6B67006295DC /* Sources */,
+				200051B6141F6B67006295DC /* Frameworks */,
+				200051B7141F6B67006295DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Engine2D;
+			productName = Engine2D;
+			productReference = 200051B9141F6B67006295DC /* Engine2D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		200051E7141F6B67006295DC /* Engine2DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200051FF141F6B67006295DC /* Build configuration list for PBXNativeTarget "Engine2DTests" */;
+			buildPhases = (
+				200051E3141F6B67006295DC /* Sources */,
+				200051E4141F6B67006295DC /* Frameworks */,
+				200051E5141F6B67006295DC /* Resources */,
+				200051E6141F6B67006295DC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				200051EF141F6B67006295DC /* PBXTargetDependency */,
+			);
+			name = Engine2DTests;
+			productName = Engine2DTests;
+			productReference = 200051E8141F6B67006295DC /* Engine2DTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		200051B0141F6B67006295DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "The Saints";
+			};
+			buildConfigurationList = 200051B3141F6B67006295DC /* Build configuration list for PBXProject "Engine2D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 200051AE141F6B67006295DC;
+			productRefGroup = 200051BA141F6B67006295DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				200051B8141F6B67006295DC /* Engine2D */,
+				200051E7141F6B67006295DC /* Engine2DTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		200051B7141F6B67006295DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200051CC141F6B67006295DC /* InfoPlist.strings in Resources */,
+				200051D5141F6B67006295DC /* MainWindow.xib in Resources */,
+				200051E2141F6B67006295DC /* Engine2DViewController.xib in Resources */,
+				20B44F7B142D1FAE00807C06 /* woods1.png in Resources */,
+				20B44F7C142D1FAE00807C06 /* woods1obj.png in Resources */,
+				20AF8DD6142FD82100FDC34E /* font_silom.png in Resources */,
+				20D0330A1430ED5500478398 /* forest1.txt in Resources */,
+				20D0330D1430F35800478398 /* script_forest1.txt in Resources */,
+				208CA2B214310AEF0040578E /* NOTES in Resources */,
+				208CA2B6143111C30040578E /* swamp.txt in Resources */,
+				208CA2B81431124D0040578E /* script_swamp.txt in Resources */,
+				208A66231437560200C18B22 /* Dinesh.dlg in Resources */,
+				208A66251437576700C18B22 /* mainGUI.png in Resources */,
+				208A662F14379E7C00C18B22 /* Heinz.dlg in Resources */,
+				208A66321437BBA500C18B22 /* Thomas.dlg in Resources */,
+				208A66341437BC1B00C18B22 /* Gunther.dlg in Resources */,
+				208A66361437BCC700C18B22 /* Hans.dlg in Resources */,
+				208A66381437BCFF00C18B22 /* Frodo.dlg in Resources */,
+				208A663A1437BD2800C18B22 /* Fridolin.dlg in Resources */,
+				2020F3221438E4680013C2BA /* icon.png in Resources */,
+				2020F324143906900013C2BA /* dialogs.png in Resources */,
+				201D012E1439F1A300237D5F /* treasureChest.png in Resources */,
+				20FBD6CF143A0A0D00BC962E /* forest_chest1.dlg in Resources */,
+				20C6BEBF143F469100E5E5EA /* main.txt in Resources */,
+				20D7C49E143F89CE00B6922E /* female1.png in Resources */,
+				20D7C4A4143FA21700B6922E /* npc1.png in Resources */,
+				20BFF4DF1440835000EB62A6 /* event1.dlg in Resources */,
+				2097EBE6144A23570066F5FF /* forest_back.png in Resources */,
+				2097EBEE144A33130066F5FF /* ork.battle in Resources */,
+				206D82F6144B0BCA000E0290 /* battleGUI.png in Resources */,
+				208202D9144BA379001F1852 /* ork2.battle in Resources */,
+				208202DB144BA42A001F1852 /* ork4.battle in Resources */,
+				209ADF51144CBB6500B74A19 /* melee2.png in Resources */,
+				20467D441450951A00FE0276 /* female1bat.png in Resources */,
+				20467D451450951A00FE0276 /* orc.png in Resources */,
+				20467D621452ABFB00FE0276 /* sPotion.item in Resources */,
+				20467D641452AFB700FE0276 /* mPotion.item in Resources */,
+				20467D661452AFD900FE0276 /* bPotion.item in Resources */,
+				20467D681452B0EC00FE0276 /* items.txt in Resources */,
+				2008637D1452BADF0069A4A3 /* itemset1.png in Resources */,
+				200863801452BB7B0069A4A3 /* sManaPotion.item in Resources */,
+				200863821452BB9C0069A4A3 /* bManaPotion.item in Resources */,
+				200863841452BBA80069A4A3 /* mManaPotion.item in Resources */,
+				20E0EE5514B4D5FE0061C92B /* Herman.dlg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200051E5141F6B67006295DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200051F5141F6B67006295DC /* InfoPlist.strings in Resources */,
+				200051F7141F6B67006295DC /* Engine2DTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		200051E6141F6B67006295DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		200051B5141F6B67006295DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200051CE141F6B67006295DC /* main.m in Sources */,
+				200051D2141F6B67006295DC /* Engine2DAppDelegate.m in Sources */,
+				200051DC141F6B67006295DC /* EAGLView.m in Sources */,
+				200051DF141F6B67006295DC /* Engine2DViewController.mm in Sources */,
+				20005222141F6CE2006295DC /* AnimatedSprite.cpp in Sources */,
+				20005223141F6CE2006295DC /* GameEngine.cpp in Sources */,
+				20005224141F6CE2006295DC /* Gui.cpp in Sources */,
+				20005226141F6CE2006295DC /* Sprite2D.cpp in Sources */,
+				20005227141F6CE2006295DC /* Texture2D.mm in Sources */,
+				20005228141F6CE2006295DC /* TextureLoader.mm in Sources */,
+				2000522D141F6CE2006295DC /* WorldMap.cpp in Sources */,
+				20A2CBD81422DA920022545F /* Helpers.mm in Sources */,
+				20488C5D142FB14D0028AEB3 /* Camera.cpp in Sources */,
+				20AF8DD1142FD6FC00FDC34E /* Font.cpp in Sources */,
+				20D033071430ECB600478398 /* Script.cpp in Sources */,
+				20FC6B8A143255FC0068D570 /* NPC.cpp in Sources */,
+				207A4CEB1433EC6000FD2928 /* DisplayList.cpp in Sources */,
+				208A66281437663900C18B22 /* Dialog.cpp in Sources */,
+				201D01311439F23400237D5F /* Object.cpp in Sources */,
+				20D7C4A0143F8A2C00B6922E /* Player.cpp in Sources */,
+				2097EBD11449F23A0066F5FF /* Characters.cpp in Sources */,
+				2097EBE2144A1B0E0066F5FF /* BattleEngine.cpp in Sources */,
+				2097EBF4144A37E30066F5FF /* Monster.cpp in Sources */,
+				208202D7144B64C7001F1852 /* BattleHelpers.cpp in Sources */,
+				20467D5D1452A50000FE0276 /* Item.cpp in Sources */,
+				200863871453194B0069A4A3 /* Inventory.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200051E3141F6B67006295DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200051F9141F6B67006295DC /* Engine2DTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		200051EF141F6B67006295DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200051B8141F6B67006295DC /* Engine2D */;
+			targetProxy = 200051EE141F6B67006295DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		200051CA141F6B67006295DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200051CB141F6B67006295DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		200051D3141F6B67006295DC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200051D4141F6B67006295DC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		200051E0141F6B67006295DC /* Engine2DViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200051E1141F6B67006295DC /* en */,
+			);
+			name = Engine2DViewController.xib;
+			sourceTree = "<group>";
+		};
+		200051F3141F6B67006295DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200051F4141F6B67006295DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		200051FA141F6B67006295DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		200051FB141F6B67006295DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		200051FD141F6B67006295DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Engine2D/Engine2D-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Engine2D/Engine2D-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		200051FE141F6B67006295DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Engine2D/Engine2D-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Engine2D/Engine2D-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		20005200141F6B67006295DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Engine2D.app/Engine2D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Engine2D/Engine2D-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Engine2DTests/Engine2DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		20005201141F6B67006295DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Engine2D.app/Engine2D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Engine2D/Engine2D-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Engine2DTests/Engine2DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		200051B3141F6B67006295DC /* Build configuration list for PBXProject "Engine2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200051FA141F6B67006295DC /* Debug */,
+				200051FB141F6B67006295DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200051FC141F6B67006295DC /* Build configuration list for PBXNativeTarget "Engine2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200051FD141F6B67006295DC /* Debug */,
+				200051FE141F6B67006295DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200051FF141F6B67006295DC /* Build configuration list for PBXNativeTarget "Engine2DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20005200141F6B67006295DC /* Debug */,
+				20005201141F6B67006295DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 200051B0141F6B67006295DC /* Project object */;
+}

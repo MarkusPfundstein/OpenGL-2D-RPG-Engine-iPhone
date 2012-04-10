@@ -1,0 +1,62 @@
+IF Switch 1 1
+Piss off ]
+... ]
+... ]
+... ]
+inputDialog 2
+...do you feel sorry?#
+1. Yes#
+2. No ]
+
+input1
+Ok, we are good again ]
+changeSwitch 1 0
+END_OF_DIALOG
+
+input2
+inputDialog 2
+Why not?#
+1. I dont think i feel you#
+2. Come on piss of ]
+
+input1
+Well, than i cant change it. ]
+END_OF_DIALOG
+
+input2
+I hate you ]
+END_OF_DIALOG
+
+ENDIF
+
+IF Switch 1 0
+Thomas:#This life is a pain..... ]
+Why cant we just die? ]
+Sometimes... #
+sometimes... #
+I..... ]
+inputDialog 3
+...Are you happy?#
+1. Most of the time#
+2. Never#
+3. What a stupid question ]
+
+input1
+Thomas:#
+Lucky bastard..#
+We are rotten here ]
+END_OF_DIALOG
+
+input2
+Thomas:#
+I feel you, here .. #
+take this... ]
+END_OF_DIALOG
+
+input3
+Thomas: #
+Fuck you ]
+changeSwitch 1 1
+END_OF_DIALOG
+ENDIF
+END_OF_DIALOG

@@ -1,0 +1,33 @@
+IF Switch 0 1
+Dinesh: #You know what to do! ]
+ENDIF
+
+IF Switch 0 0
+Dinesh: #Everybody has a dream...!!!#But I, ...#I gave up..... ]
+Do you have a dream? ]
+They told us that we will find #peace here... 
+but they lied... ]
+If know I did a lot of wrong things.. ]
+But this????? #Nobody deservers this... # 
+
+inputDialog 2 
+Help us... ? Will you help us ?#
+1. Yes, why not#
+2. No, time is money ]
+
+input1
+Player: #Of course! ...#I am the best in doing those stuff. ]
+changeSwitch 0 1
+Dinesh: #Thank you my friend!!! ]
+Please talk to Frodo now.#
+He will explain you what to do... ]
+END_OF_DIALOG
+
+input2
+Player: #No man, absolutely no time for that #bullshit. ]
+Dinesh: #Im sorry to hear that... ]
+Leave me alone please ]
+END_OF_DIALOG
+ENDIF
+
+END_OF_DIALOG

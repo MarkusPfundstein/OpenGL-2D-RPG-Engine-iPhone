@@ -1,0 +1,15 @@
+Gunther:#Hell is better than here.. believe me ]
+
+inputDialog 2
+Is herman nice?#1. NO#2. YES ]
+
+input1
+Yeah i know, Herman is never nice ]
+END_OF_DIALOG
+
+input2
+Well, i dont believe you ]
+END_OF_DIALOG
+
+
+END_OF_DIALOG

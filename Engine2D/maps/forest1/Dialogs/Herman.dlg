@@ -1,0 +1,22 @@
+Herman:#I am sooooooo happy ]
+
+inputDialog 3
+Are you happy? #
+1. im high#
+2. im drunk#
+3. im not happy ]
+
+input1 
+Herman:#meeee too, always ]
+END_OF_DIALOG
+
+input2
+Herman:#drinking is cooool ]
+END_OF_DIALOG
+
+input3
+Herman:#you should beeeeee!!!!! ]
+END_OF_DIALOG
+
+
+END_OF_DIALOG

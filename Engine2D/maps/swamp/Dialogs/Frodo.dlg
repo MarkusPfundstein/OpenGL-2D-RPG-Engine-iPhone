@@ -1,0 +1,13 @@
+Frodo:#Don't talk to me... ]
+
+
+IF Switch 0 1
+Frodo:#Oh you talked to Dinesh... ]
+Well,... when he sends you I will tell you ]
+Go to the North.. talk to the Witch ..#
+she cursed us and she knows how to#
+give us our life back ]
+changeValue 10 10
+ENDIF
+
+END_OF_DIALOG

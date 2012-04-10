@@ -1,0 +1,27 @@
+IF Switch 800 0
+WAIT!! ? ]
+
+You need to pray!!!!! ]
+
+inputDialog 2
+1. Pray!#
+2. No way! ]
+
+input1
+playAnimation player 6 8 50
+wait 150
+
+Perfect ]
+Go on! ]
+
+changeSwitch 800 1
+END_OF_DIALOG
+
+input2
+Player:#Are you crazy? ]
+
+changeSwitch 800 1
+END_OF_DIALOG
+ENDIF
+
+END_OF_DIALOG

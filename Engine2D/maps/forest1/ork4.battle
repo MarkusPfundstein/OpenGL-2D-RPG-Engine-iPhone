@@ -1,0 +1,10 @@
+forest_back.png
+
+5
+orc.png 30 30 KI_AGGRO 40 5 10 30 10
+orc.png 80 110 KI_AGGRO 25 10 10 50 15
+orc.png 30 190 KI_AGGRO 30 5 10 25 10
+orc.png 170 40 KI_AGGRO 10 5 10 25 10
+orc.png 178 200 KI_AGGRO 15 5 10 25 10
+
+END_OF_SCRIPT

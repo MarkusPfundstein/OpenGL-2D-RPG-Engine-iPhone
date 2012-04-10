@@ -1,0 +1,12 @@
+Heinz:#Who are you? ]
+Leave us alone... ]
+playAnimation this 0 2 50
+playAnimation player 6 8 60
+wait 150
+
+IF Switch 0 1
+Well, but you seem to be ok! ]
+Here, take this! ]
+ENDIF
+
+END_OF_DIALOG

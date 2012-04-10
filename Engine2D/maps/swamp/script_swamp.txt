@@ -1,0 +1,15 @@
+START_OF_SCRIPT
+
+new TransportTile 12 179 20 1 forest1.txt 
+new TransportTile 11 179 20 1 forest1.txt
+new TransportTile 10 179 20 1 forest1.txt 
+
+new EventTile 10 173 event1.dlg
+
+new NPC 4
+npc1.png 6 174 NPC_WALKAROUND Fridolin
+npc1.png 17 172 NPC_STAND_LEFT Hans
+npc1.png 16 172 NPC_STAND_RIGHT Frodo
+npc1.png 14 165 NPC_STAND_UP Dinesh
+
+END_OF_SCRIPT

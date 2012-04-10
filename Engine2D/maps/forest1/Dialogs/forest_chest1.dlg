@@ -1,0 +1,27 @@
+IF Switch 999 1
+playAnimation this 0 3 10
+wait 40
+Empty ]
+
+playAnimation player 3 5 50
+wait 150
+
+ENDIF
+
+IF Switch 999 0
+playAnimation this 0 3 10 
+wait 50
+
+Nothing in here ]
+
+playAnimation player 3 5 50
+wait 150
+
+Stupid chest... #I close it ]
+
+setAnimationState this 0
+
+changeSwitch 999 1
+ENDIF
+
+END_OF_DIALOG

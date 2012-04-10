@@ -1,0 +1,11 @@
+itemset1.png 4 2 6
+
+sPotion.item
+mPotion.item
+bPotion.item
+sManaPotion.item
+mManaPotion.item
+bManaPotion.item
+
+
+

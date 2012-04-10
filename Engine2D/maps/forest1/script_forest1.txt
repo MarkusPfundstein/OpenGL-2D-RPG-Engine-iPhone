@@ -1,0 +1,22 @@
+START_OF_SCRIPT
+
+new TransportTile 19 0 10 178 swamp.txt 
+new TransportTile 20 0 10 178 swamp.txt
+new TransportTile 21 0 10 178 swamp.txt 
+
+new NPC 5
+npc1.png 8 21 NPC_WALKAROUND Gunther
+npc1.png 9 7 NPC_WALKAROUND Heinz
+npc1.png 21 7 NPC_STAND_RIGHT Thomas
+npc1.png 17 22 NPC_WALKAROUND Herman
+npc1.png 18 22 NPC_STAND_DOWN Lennart
+
+new OBJECT 1
+treasureChest.png 17 2 1 forest_chest1
+
+new BATTLE 3 10
+ork.battle 
+ork2.battle
+ork4.battle
+
+END_OF_SCRIPT
